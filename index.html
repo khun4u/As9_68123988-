@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>MovieWeb</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand">🎬 MovieWeb</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle"
+data-bs-toggle="dropdown">
+
+ภาพยนตร์
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item">ล้วงลับเวทีลวง</a></li>
+<li><a class="dropdown-item">เซลล์ขยันพันธุ์เดือด</a></li>
+<li><a class="dropdown-item">Gundam Seed Freedom</a></li>
+
+</ul>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">เกี่ยวกับเรา</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">ติดต่อเรา</a>
+</li>
+
+</ul>
+
+<form class="d-flex ms-3">
+
+<input class="form-control me-2"
+type="search"
+placeholder="ค้นหาหนัง">
+
+<button class="btn btn-warning">🔍</button>
+
+</form>
+
+</div>
+</div>
+</nav>
+
+<!-- BANNER -->
+
+<section class="banner text-white text-center">
+
+<div>
+
+<h1>Movie Website</h1>
+<p>รวมภาพยนตร์ยอดนิยม</p>
+
+</div>
+
+</section>
+
+<!-- MOVIE SECTION -->
+
+<section class="container mt-5">
+
+<h2 class="text-center">ภาพยนตร์</h2>
+
+<div class="row mt-4">
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="thumb_3507.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5>ล้วงลับเวทีลวง</h5>
+
+<p>⭐ ⭐ ⭐ ⭐</p>
+
+<button class="btn btn-danger"
+data-bs-toggle="modal"
+data-bs-target="#movie1">
+
+ดูรายละเอียด
+
+</button>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="unnamed.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5>เซลล์ขยันพันธุ์เดือด</h5>
+
+<p>⭐ ⭐ ⭐ ⭐ ⭐</p>
+
+<button class="btn btn-danger">
+
+ดูรายละเอียด
+
+</button>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<img src="thumb_3510.jpg"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5>Gundam Seed Freedom</h5>
+
+<p>⭐ ⭐ ⭐ ⭐ ⭐</p>
+
+<button class="btn btn-danger">
+
+ดูรายละเอียด
+
+</button>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- MODAL -->
+
+<div class="modal fade" id="movie1">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5>ล้วงลับเวทีลวง</h5>
+
+<button class="btn-close"
+data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<p>ผู้กำกับ : ตัวอย่าง</p>
+<p>นักแสดง : ตัวอย่าง</p>
+<p>สาบลับ</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- ABOUT -->
+
+<section id="about" class="container mt-5">
+
+<h2>เกี่ยวกับเรา</h2>
+
+<p>
+
+เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำภาพยนตร์
+และเป็นตัวอย่างการพัฒนาเว็บไซต์
+
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="container mt-5">
+
+<h2>ติดต่อเรา</h2>
+
+<form id="contactForm">
+
+<div class="mb-3">
+
+<label>ชื่อ</label>
+
+<input type="text"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label>Email</label>
+
+<input type="email"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label>ข้อความ</label>
+
+<textarea
+class="form-control"
+required></textarea>
+
+</div>
+
+<button class="btn btn-success">
+
+ส่งข้อมูล
+
+</button>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer text-center">
+
+<p>68123988</p>
+
+<div class="social">
+
+<a href="https://facebook.com" target="_blank">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="https://instagram.com" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://line.me" target="_blank">
+<i class="fab fa-line"></i>
+</a>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
